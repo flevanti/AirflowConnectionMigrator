@@ -12,6 +12,40 @@ Airflow Connection Migrator provides a native macOS GUI for managing Airflow dat
 
 Perfect for DevOps teams managing multiple Airflow environments who need to synchronize connection configurations securely.
 
+                            
+## Screenshots
+
+Click images to enlarge:
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="README_images/export.png">
+        <img src="README_images/export.png" width="250" alt="Export View"/>
+      </a>
+      <br/>
+      <b>Export View</b>
+    </td>
+    <td align="center">
+      <a href="README_images/import.png">
+        <img src="README_images/import.png" width="250" alt="Import View"/>
+      </a>
+      <br/>
+      <b>Import View</b>
+    </td>
+    <td align="center">
+      <a href="README_images/settings.png">
+        <img src="README_images/settings.png" width="250" alt="Settings View"/>
+      </a>
+      <br/>
+      <b>Settings View</b>
+    </td>
+  </tr>
+</table>
+                            
+                            
+                            
+                            
 ## Features
 
 ### 🔐 Security First
