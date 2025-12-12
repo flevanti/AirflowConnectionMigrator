@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		038C1FDA2EE9825600F76433 /* CryptoSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 038C1FD92EE9825600F76433 /* CryptoSwift */; };
+		038C1FDD2EE982AD00F76433 /* PostgresNIO in Frameworks */ = {isa = PBXBuildFile; productRef = 038C1FDC2EE982AD00F76433 /* PostgresNIO */; };
+		038C1FDF2EE982AD00F76433 /* _ConnectionPoolModule in Frameworks */ = {isa = PBXBuildFile; productRef = 038C1FDE2EE982AD00F76433 /* _ConnectionPoolModule */; };
+		038C1FE12EE982AD00F76433 /* _ConnectionPoolTestUtils in Frameworks */ = {isa = PBXBuildFile; productRef = 038C1FE02EE982AD00F76433 /* _ConnectionPoolTestUtils */; };
+		03AD87642EEC957C00F12934 /* SwiftFernet in Frameworks */ = {isa = PBXBuildFile; productRef = 03AD87632EEC957C00F12934 /* SwiftFernet */; };
+		03AD87B42EEC98E500F12934 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03AD87B32EEC98E500F12934 /* XCTest.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		03AD87B92EEC9F0300F12934 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 03AD87B82EEC9EFD00F12934 /* README.md */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		03AD87722EEC97ED00F12934 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 038C1FC22EE9821200F76433 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 038C1FC92EE9821200F76433;
+			remoteInfo = AirflowConnectionMigrator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03AD876E2EEC97ED00F12934 /* AirflowConnectionMigratorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AirflowConnectionMigratorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		03AD87B32EEC98E500F12934 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/MacOSX.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		03AD87B82EEC9EFD00F12934 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = README.md; sourceTree = "<group>"; };
+		03F1CE8A2EEB28CD00FA8795 /* AirflowConnectionMigrator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirflowConnectionMigrator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		03AD87B52EEC998C00F12934 /* Exceptions for "AirflowConnectionMigratorTests" folder in "AirflowConnectionMigrator" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				AirflowConnectionMigratorTests.swift,
+			);
+			target = 038C1FC92EE9821200F76433 /* AirflowConnectionMigrator */;
+		};
+		03AD87B72EEC999100F12934 /* Exceptions for "AirflowConnectionMigratorTests" folder in "AirflowConnectionMigratorTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				AirflowConnectionMigratorTests.swift,
+			);
+			target = 03AD876D2EEC97ED00F12934 /* AirflowConnectionMigratorTests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		038C1FCC2EE9821200F76433 /* AirflowConnectionMigrator */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = AirflowConnectionMigrator;
+			sourceTree = "<group>";
+		};
+		03AD87652EEC96CB00F12934 /* AirflowConnectionMigratorTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				03AD87B52EEC998C00F12934 /* Exceptions for "AirflowConnectionMigratorTests" folder in "AirflowConnectionMigrator" target */,
+				03AD87B72EEC999100F12934 /* Exceptions for "AirflowConnectionMigratorTests" folder in "AirflowConnectionMigratorTests" target */,
+			);
+			path = AirflowConnectionMigratorTests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		038C1FC72EE9821200F76433 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				038C1FDF2EE982AD00F76433 /* _ConnectionPoolModule in Frameworks */,
+				03AD87642EEC957C00F12934 /* SwiftFernet in Frameworks */,
+				038C1FDD2EE982AD00F76433 /* PostgresNIO in Frameworks */,
+				038C1FE12EE982AD00F76433 /* _ConnectionPoolTestUtils in Frameworks */,
+				038C1FDA2EE9825600F76433 /* CryptoSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03AD876B2EEC97ED00F12934 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03AD87B42EEC98E500F12934 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		038C1FC12EE9821200F76433 = {
+			isa = PBXGroup;
+			children = (
+				03AD87B82EEC9EFD00F12934 /* README.md */,
+				03AD87652EEC96CB00F12934 /* AirflowConnectionMigratorTests */,
+				038C1FCC2EE9821200F76433 /* AirflowConnectionMigrator */,
+				03F1CE8A2EEB28CD00FA8795 /* AirflowConnectionMigrator.app */,
+				03AD876E2EEC97ED00F12934 /* AirflowConnectionMigratorTests.xctest */,
+				03AD87B22EEC98E500F12934 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		03AD87B22EEC98E500F12934 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03AD87B32EEC98E500F12934 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		038C1FC92EE9821200F76433 /* AirflowConnectionMigrator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 038C1FD52EE9821400F76433 /* Build configuration list for PBXNativeTarget "AirflowConnectionMigrator" */;
+			buildPhases = (
+				038C1FC62EE9821200F76433 /* Sources */,
+				038C1FC72EE9821200F76433 /* Frameworks */,
+				038C1FC82EE9821200F76433 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				038C1FCC2EE9821200F76433 /* AirflowConnectionMigrator */,
+				03AD87652EEC96CB00F12934 /* AirflowConnectionMigratorTests */,
+			);
+			name = AirflowConnectionMigrator;
+			packageProductDependencies = (
+				038C1FD92EE9825600F76433 /* CryptoSwift */,
+				038C1FDC2EE982AD00F76433 /* PostgresNIO */,
+				038C1FDE2EE982AD00F76433 /* _ConnectionPoolModule */,
+				038C1FE02EE982AD00F76433 /* _ConnectionPoolTestUtils */,
+				03AD87632EEC957C00F12934 /* SwiftFernet */,
+			);
+			productName = AirflowConnectionMigrator;
+			productReference = 03F1CE8A2EEB28CD00FA8795 /* AirflowConnectionMigrator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		03AD876D2EEC97ED00F12934 /* AirflowConnectionMigratorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03AD87742EEC97ED00F12934 /* Build configuration list for PBXNativeTarget "AirflowConnectionMigratorTests" */;
+			buildPhases = (
+				03AD876A2EEC97ED00F12934 /* Sources */,
+				03AD876B2EEC97ED00F12934 /* Frameworks */,
+				03AD876C2EEC97ED00F12934 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03AD87732EEC97ED00F12934 /* PBXTargetDependency */,
+			);
+			name = AirflowConnectionMigratorTests;
+			packageProductDependencies = (
+			);
+			productName = AirflowConnectionMigratorTests;
+			productReference = 03AD876E2EEC97ED00F12934 /* AirflowConnectionMigratorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		038C1FC22EE9821200F76433 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2610;
+				LastUpgradeCheck = 2610;
+				TargetAttributes = {
+					038C1FC92EE9821200F76433 = {
+						CreatedOnToolsVersion = 26.1.1;
+					};
+					03AD876D2EEC97ED00F12934 = {
+						CreatedOnToolsVersion = 26.1.1;
+						TestTargetID = 038C1FC92EE9821200F76433;
+					};
+				};
+			};
+			buildConfigurationList = 038C1FC52EE9821200F76433 /* Build configuration list for PBXProject "AirflowConnectionMigrator" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 038C1FC12EE9821200F76433;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				038C1FD82EE9825600F76433 /* XCRemoteSwiftPackageReference "CryptoSwift" */,
+				038C1FDB2EE982AD00F76433 /* XCRemoteSwiftPackageReference "postgres-nio" */,
+				03AD87622EEC957C00F12934 /* XCRemoteSwiftPackageReference "SwiftFernet" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 038C1FC12EE9821200F76433;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				038C1FC92EE9821200F76433 /* AirflowConnectionMigrator */,
+				03AD876D2EEC97ED00F12934 /* AirflowConnectionMigratorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		038C1FC82EE9821200F76433 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03AD876C2EEC97ED00F12934 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		038C1FC62EE9821200F76433 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03AD87B92EEC9F0300F12934 /* README.md in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03AD876A2EEC97ED00F12934 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		03AD87732EEC97ED00F12934 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 038C1FC92EE9821200F76433 /* AirflowConnectionMigrator */;
+			targetProxy = 03AD87722EEC97ED00F12934 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		038C1FD32EE9821400F76433 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 7UKPZ2344R;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.7;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		038C1FD42EE9821400F76433 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 7UKPZ2344R;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		038C1FD62EE9821400F76433 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AirflowConnectionMigrator/AirflowConnectionMigrator.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_INCOMING_NETWORK_CONNECTIONS = NO;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
+				ENABLE_RESOURCE_ACCESS_BLUETOOTH = NO;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
+				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
+				ENABLE_RESOURCE_ACCESS_PRINTING = NO;
+				ENABLE_RESOURCE_ACCESS_USB = NO;
+				ENABLE_USER_SELECTED_FILES = readwrite;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = d612.AirflowConnectionMigrator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		038C1FD72EE9821400F76433 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AirflowConnectionMigrator/AirflowConnectionMigrator.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_INCOMING_NETWORK_CONNECTIONS = NO;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
+				ENABLE_RESOURCE_ACCESS_BLUETOOTH = NO;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
+				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
+				ENABLE_RESOURCE_ACCESS_PRINTING = NO;
+				ENABLE_RESOURCE_ACCESS_USB = NO;
+				ENABLE_USER_SELECTED_FILES = readwrite;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = d612.AirflowConnectionMigrator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		03AD87752EEC97ED00F12934 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = d612.AirflowConnectionMigratorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AirflowConnectionMigrator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AirflowConnectionMigrator";
+			};
+			name = Debug;
+		};
+		03AD87762EEC97ED00F12934 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = d612.AirflowConnectionMigratorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AirflowConnectionMigrator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AirflowConnectionMigrator";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		038C1FC52EE9821200F76433 /* Build configuration list for PBXProject "AirflowConnectionMigrator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				038C1FD32EE9821400F76433 /* Debug */,
+				038C1FD42EE9821400F76433 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		038C1FD52EE9821400F76433 /* Build configuration list for PBXNativeTarget "AirflowConnectionMigrator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				038C1FD62EE9821400F76433 /* Debug */,
+				038C1FD72EE9821400F76433 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03AD87742EEC97ED00F12934 /* Build configuration list for PBXNativeTarget "AirflowConnectionMigratorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03AD87752EEC97ED00F12934 /* Debug */,
+				03AD87762EEC97ED00F12934 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		038C1FD82EE9825600F76433 /* XCRemoteSwiftPackageReference "CryptoSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/krzyzanowskim/CryptoSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.9.0;
+			};
+		};
+		038C1FDB2EE982AD00F76433 /* XCRemoteSwiftPackageReference "postgres-nio" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/vapor/postgres-nio.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.29.0;
+			};
+		};
+		03AD87622EEC957C00F12934 /* XCRemoteSwiftPackageReference "SwiftFernet" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/flevanti/SwiftFernet";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		038C1FD92EE9825600F76433 /* CryptoSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 038C1FD82EE9825600F76433 /* XCRemoteSwiftPackageReference "CryptoSwift" */;
+			productName = CryptoSwift;
+		};
+		038C1FDC2EE982AD00F76433 /* PostgresNIO */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 038C1FDB2EE982AD00F76433 /* XCRemoteSwiftPackageReference "postgres-nio" */;
+			productName = PostgresNIO;
+		};
+		038C1FDE2EE982AD00F76433 /* _ConnectionPoolModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 038C1FDB2EE982AD00F76433 /* XCRemoteSwiftPackageReference "postgres-nio" */;
+			productName = _ConnectionPoolModule;
+		};
+		038C1FE02EE982AD00F76433 /* _ConnectionPoolTestUtils */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 038C1FDB2EE982AD00F76433 /* XCRemoteSwiftPackageReference "postgres-nio" */;
+			productName = _ConnectionPoolTestUtils;
+		};
+		03AD87632EEC957C00F12934 /* SwiftFernet */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 03AD87622EEC957C00F12934 /* XCRemoteSwiftPackageReference "SwiftFernet" */;
+			productName = SwiftFernet;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 038C1FC22EE9821200F76433 /* Project object */;
+}
