@@ -2,6 +2,21 @@
 
 A macOS application for securely exporting and importing Apache Airflow connection configurations between environments.
 
+## Implementations
+
+This tool is available in three different implementations:
+
+| Implementation | Interface         | Repository                                                                                         |
+|----------------|-------------------|----------------------------------------------------------------------------------------------------|
+| **Python**     | CLI               | [airflow_connections_import_export](https://github.com/flevanti/airflow_connections_import_export) |
+| **Swift**      | Native macOS app  | [AirflowConnectionMigrator](https://github.com/flevanti/AirflowConnectionMigrator)                 |
+| **Go**         | Web server or TUI | [airflow-migrator](https://github.com/flevanti/airflow-migrator)                                   |
+
+All implementations share the same Fernet encryption format, so exported files are interchangeable between them.
+> As part of the Swift implementation, a standalone Fernet encryption library was developed and
+> released: [SwiftFernet](https://github.com/flevanti/SwiftFernet)
+
+
 ## Overview
 
 Airflow Connection Migrator provides a native macOS GUI for managing Airflow database connections, enabling you to:
